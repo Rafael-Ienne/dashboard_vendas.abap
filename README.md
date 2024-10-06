@@ -36,7 +36,7 @@ Selecionar vbeln onde vbelv = vbeln da seleção anterior, VBTYP_N = M, VBTYP_V 
 - loop, read table, select for all entries;
 - append;
 - funções ou classes;
-- ALV.
+- ALV OO.
 
 ## Tela de seleção
 ![Tela de seleção](https://raw.githubusercontent.com/Rafael-Ienne/dashboard_vendas.abap/refs/heads/main/img/tela_selecao_com_parametros.png)

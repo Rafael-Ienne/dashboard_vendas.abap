@@ -1,12 +1,13 @@
 # Dashboard de vendas
-Projeto desenvolvido em ABAP voltado para o módulo SD e construído com base na seguinte especificação funcional:
+Projeto desenvolvido em ABAP, voltado para o módulo SD e construído com base em uma especificação funcional.
 
+## Especificação funcional
 Criar um programa que selecione o fluxo dos documentos de vendas e mostre o resultado em forma de relatório.
 Este programa deve ter uma tela inicial contendo parâmetros de seleção para usar como filtros. Os filtros são:
-Cliente:  kna1-kunnr
-Ordem de venda: vbak-vbeln
-Remessa: likp-vbeln
-Fatura: vbrk-vbeln
+Cliente:  kna1-kunnr;
+Ordem de venda: vbak-vbeln;
+Remessa: likp-vbeln;
+Fatura: vbrk-vbeln.
 
 O relatório deve conter os seguintes campos:
 Tabela VBAK:
@@ -24,20 +25,26 @@ VBELN FKDAT MWSBK FKSTO
 
 Condições de ligação para encontrar o fluxo de documentos na tabela vbfa
 - de ordem para remessa
-Selecionar VBELN onde VBELV = vbak-vbeln, VBTYP_N = J, VBTYP_V = C
+Selecionar VBELN onde VBELV = vbak-vbeln, VBTYP_N = J, VBTYP_V = C.
 
 - de remessa para fatura
-Selecionar vbeln onde vbelv = vbeln da seleção anterior, VBTYP_N = M, VBTYP_V = J
+Selecionar vbeln onde vbelv = vbeln da seleção anterior, VBTYP_N = M, VBTYP_V = J.
 
-ORIENTAÇÕES TÉCNICAS:
-O que voce precisa saber de ABAP:
-- tabelas internas
-- operações de leitura (select)
-- loop, read table, select for all entries
-- append
-- funções ou classes
-- ALV
+## Skills empregadas
+- tabelas internas;
+- operações de leitura (select);
+- loop, read table, select for all entries;
+- append;
+- funções ou classes;
+- ALV.
 
 ## Tela de seleção
-![Tela de seleção](https://raw.githubusercontent.com/Rafael-Ienne/projeto_gestao_mercado.abap/main/img/tela_inicial_materiais.png)
+![Tela de seleção](https://raw.githubusercontent.com/Rafael-Ienne/dashboard_vendas.abap/refs/heads/main/img/tela_selecao_com_parametros.png)
+
+## Resultado da busca sem parâmetros
+![Resultado da busca sem parâmetros](https://raw.githubusercontent.com/Rafael-Ienne/dashboard_vendas.abap/refs/heads/main/img/dashboard_sem_parametros_entrada.png)
+
+## Resultado da busca com parâmetros
+![Resultado da busca com parâmetros](https://raw.githubusercontent.com/Rafael-Ienne/dashboard_vendas.abap/refs/heads/main/img/resultado_com_parametros.png)
+
 

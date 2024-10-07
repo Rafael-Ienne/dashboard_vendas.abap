@@ -1,6 +1,10 @@
 # Dashboard de vendas
 Projeto desenvolvido em ABAP, voltado para o módulo SD e construído com base em uma especificação funcional.
 
+## Objetivo
+Atualmente não existe um relatório standard para mostrar todo o fluxo dos documentos de vendas.
+Deve ser criado um relatório que mostre na mesma linha o número da ordem de venda, da remessa (fornecimento) e da fatura.
+
 ## Especificação funcional
 Criar um programa que selecione o fluxo dos documentos de vendas e mostre o resultado em forma de relatório.
 Este programa deve ter uma tela inicial contendo parâmetros de seleção para usar como filtros. Os filtros são:
